@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharkstudy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            
+        </div>
+    </header>
+
+    <!-- Barra de Navegação Lateral -->
+    <div class="sidenav" id="mySidenav">
+        <button onclick="showCategory('literatura')">Literatura</button>
+        <button onclick="showCategory('tecnologia')">Tecnologia</button>
+        <button onclick="showCategory('filosofia')">Filosofia</button>
+    </div>
+
+    <audio controls>
+        <source src="audios/12 - MATUÊ - BANCO.mp3">
+        Seu navegador não suporta
+    </audio>
+
+    <div class="main-content">
+        <div class="container" id="literatura">
+            <!-- Livros de Literatura -->
+            <div class="books-row">
+                <div class="book">
+                    <img src="imgs/domcasmurro.jpg" alt="Dom Casmurro">
+                    <h2>Dom Casmurro</h2>
+                    <p>Autor: Machado de Assis</p>
+                    <p>Descrição: Um dos maiores clássicos da literatura brasileira.</p>
+                    <a href="https://www.ic.unicamp.br/~stolfi/misc/2012-02-13-domine-casmurrus.pdf" class="download-button" download>Baixar</a>
+                </div>
+                <div class="book">
+                    <img src="imgs/pequenoprincipe.webp" alt="O Pequeno Príncipe">
+                    <h2>O Pequeno Príncipe</h2>
+                    <p>Autor: Antoine de Saint-Exupéry</p>
+                    <p>Descrição: Uma história encantadora sobre um pequeno príncipe.</p>
+                    <a href="https://www.valdiraguilera.net/bu/o-pequeno-principe.pdf" class="download-button" download>Baixar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="tecnologia" style="display: none;">
+            <!-- Livros de Tecnologia -->
+            <div class="books-row">
+                <div class="book">
+                    <img src="imgs/cleancode.jpg" alt="Clean Code">
+                    <h2>Clean Code</h2>
+                    <p>Autor: Robert C. Martin</p>
+                    <p>Descrição: Princípios de escrita de código limpo.</p>
+                    <a href="https://github.com/free-educa/books/blob/main/books/Codigo%20Limpo%20-%20Completo%20PT.pdf" class="download-button" download>Baixar</a>
+                </div>
+                <div class="book">
+                    <img src="imgs/designpatterns.jpg" alt="Design Patterns">
+                    <h2>Design Patterns</h2>
+                    <p>Autor: Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</p>
+                    <p>Descrição: Clássico sobre padrões de design de software.</p>
+                    <a href="https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Padr%C3%B5es%20de%20Projeto%20-%20Soluc%C3%B5es%20Reutiliz%C3%A1veis%20de%20Software%20Orientado%20a%20Objetos.pdf" class="download-button" download>Baixar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="filosofia" style="display: none;">
+            <!-- Livros de Filosofia -->
+            <div class="books-row">
+                <div class="book">
+                    <img src="imgs/o banquete.jpg" alt="Platão">
+                    <h2>O Banquete</h2>
+                    <p>Autor: Platão</p>
+                    <p>Descrição: Diálogos filosóficos sobre o amor.</p>
+                    <a href="https://web.archive.org/web/20201026221745/http://revistaliteraria.com.br/PlataoOBanquete.pdf" class="download-button" download>Baixar</a>
+                </div>
+                <div class="book">
+                    <img src="imgs/zarastustra.webp" alt="Nietzsche">
+                    <h2>Assim Falou Zaratustra</h2>
+                    <p>Autor: Friedrich Nietzsche</p>
+                    <p>Descrição: Obra fundamental da filosofia existencialista.</p>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjX-OrN1KGGAxWVqpUCHXVeA4MQFnoECCsQAQ&url=https%3A%2F%2Fbiblioteca.sophia.com.br%2Fterminal%2F7615%2FBusca%2FDownload%3FcodigoArquivo%3D53&usg=AOvVaw3FMna6SF72oz92ZJejmfUo&opi=89978449" class="download-button" download>Baixar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024</p>
+        <p>Todos os direitos reservados</p>
+        <p>Desenvolvido por sharkstudy</p>
+        <a href="https://discord.gg/SkeBbHC4XU" target="_blank">
+            <img src="imgs/Discord-Logo.png" alt="Discord">
+        </a>
+        <a href="https://br.linkedin.com/in/pvitorsan?trk=people-guest_people_search-card" target="_blank">
+            <img src="imgs/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp" alt="Linkedin">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

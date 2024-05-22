@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #09182c;
+    color: #333;
+}
+
+/* Estilizando o header */
+
+
+/* Estilos para o cabeçalho */
+.header {
+    background-image: url('imgs/capa\ \(2\).png');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Altura do cabeçalho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.header-content h1 {
+    color: #000000; /* Cor do texto */
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+.main-content {
+    margin-left: 0; /* Espaço inicial */
+    transition: margin-left 0.3s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Esconder a barra lateral por padrão */
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 8px solid #dddddd;
+    transition: left 0.3s;
+}
+
+.sidenav:hover {
+    left: 0; /* Exibir a barra lateral ao passar o mouse sobre ela */
+}
+
+.sidenav button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidenav button:hover {
+    background-color: #d80c0c;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.books-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book {
+    flex: 1 1 calc(33.333% - 20px); /* 3 livros por linha com espaçamento */
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.book img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.book h2 {
+    margin-bottom: 5px;
+}
+
+.book p {
+    margin-bottom: 10px;
+}
+
+.download-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo geral para o player de áudio */
+audio {
+    width: 300px; /* largura do player de áudio */
+    height: 50px; /* altura do player de áudio */
+    display: block; /* exibir o player de áudio no bloco */
+    margin: 0 auto; /* centralizar o player de áudio */
+}
+
+/* Estilo para os controles do player de áudio */
+audio::-webkit-media-controls-panel {
+    background-color: #f3f3f3; /* cor de fundo dos controles */
+    color: #333; /* cor do texto nos controles */
+    border-radius: 8px; /* borda arredondada */
+    padding: 10px; /* espaçamento interno */
+}
+
+/* Estilo para o botão de reproduzir/pausar */
+audio::-webkit-media-controls-play-button {
+    background-color: #c20505; /* cor de fundo do botão */
+    color: #fff; /* cor do ícone */
+    border-radius: 50%; /* torna o botão redondo */
+    width: 40px; /* largura do botão */
+    height: 40px; /* altura do botão */
+    font-size: 24px; /* tamanho do ícone */
+    padding: 10px; /* espaçamento interno */
+    margin-right: 10px; /* espaço interno entre o botão e o ícone */
+    transition: background-color 0.3s; /* transição do botão */
+}
+
+/* Estilo básico para o footer */
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto do footer */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Alinhamento do texto ao centro */
+}
+
+/* Estilo para os parágrafos dentro do footer */
+footer p {
+    margin: 10px 0; /* Margem interna superior e inferior */
+}
+
+/* Estilo para os links de redes sociais */
+footer a {
+    display: inline-block; /* Exibe os links como blocos inline */
+    margin: 0 10px; /* Margem entre os links */
+}
+
+/* Estilo para as imagens dos logos */
+footer img {
+    width: 40px; /* Largura das imagens */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 5px; /* Borda arredondada */
+    transition: transform 0.3s ease; /* Transição suave para animar o hover */
+}
+
+/* Estilo para as imagens ao passar o mouse sobre elas */
+footer img:hover {
+    transform: scale(1.2); /* Aumenta ligeiramente o tamanho das imagens */
+}
